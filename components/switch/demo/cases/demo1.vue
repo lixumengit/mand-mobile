@@ -1,13 +1,15 @@
 <template>
   <div class="md-example-child md-example-child-switch md-example-child-switch-1">
     <md-switch
+      active-color="#13ce66"
       v-model="isActive"
       @change="handler('switch1', isActive, $event)"
     ></md-switch>
   </div>
 </template>
 
-<script>import {Switch} from 'mand-mobile'
+<script>
+import {Switch} from 'mand-mobile'
 
 export default {
   name: 'switch-demo',
@@ -29,4 +31,5 @@ export default {
     },
   },
 }
-</script>
+
+</script>
